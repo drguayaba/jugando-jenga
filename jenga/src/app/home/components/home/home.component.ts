@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+	public colors: boolean;
+	public numbers: boolean;
 
-  constructor() { }
-
-  ngOnInit(): void {
+	constructor() {
+  	this.colors = false;
+  	this.numbers = false;
   }
 
+  ngOnInit() {
+  }
 }

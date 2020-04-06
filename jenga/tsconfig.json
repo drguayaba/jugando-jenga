@@ -17,8 +17,7 @@
     ],
     "paths": {
       "@app/*": ["src/app/*"],
-      "@env/*": ["src/environments/*"],
-      "@material": ["src/material/*"]
+      "@material/*": ["src/material/*"]
     }
   },
   "angularCompilerOptions": {

@@ -1,0 +1,37 @@
+<div class="buttons">
+	<button mat-raised-button color="warn" (click)="setTypeGame('colors')">Colores</button>
+	<button mat-raised-button color="warn" (click)="setTypeGame('numbers')">Números</button>
+</div>
+<div class="container colors" *ngIf="colors">
+	<h1 class="text-center">Jenga de colores</h1>
+	<div class="form">
+		<form [formGroup]="gamers" (ngSubmit)="validatePlayers()">
+			<div class="form-control">
+				<label for="count">¿Cuantos jugadores?</label>
+		    <select formControlName="player" >
+		      <option *ngFor="let playe of players" value="{{playe.id}}">{{playe.value}}</option>
+		    </select>
+			</div>
+		</form>
+	</div>
+	<div class="gamers">
+		
+	</div>
+</div>
+
+<div class="container numbers" *ngIf="numbers">
+	<h1 class="text-center">Jenga de números</h1>
+	<div class="form">
+		<form [formGroup]="gamers" (ngSubmit)="validatePlayers()">
+			<div class="form-control">
+				<label for="count">¿Cuantos jugadores?</label>
+		    <select formControlName="player" >
+		      <option *ngFor="let playe of players" value="{{playe.id}}">{{playe.value}}</option>
+		    </select>
+			</div>
+		</form>
+	</div>
+	<div class="gamers">
+		
+	</div>
+</div>

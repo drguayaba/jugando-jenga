@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div class="container mt-5">
+	<div class="header">
+		<h1 class="text-center">Jenga</h1>
+	</div>
+	<div *ngIf="colors" class="content colors">
+		<p>¿Como se juega jenga de colores?</p>
+	</div>
+	<div *ngIf="numbers" class="content numbers">
+		<p>¿Como se juega jenga de números?</p>
+	</div>
+</div>
